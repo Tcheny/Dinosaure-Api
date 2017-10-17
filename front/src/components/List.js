@@ -8,7 +8,7 @@ class List extends Component {
         <ul>
           {this.props.dinosaures.map((dino, index) => {
             return (
-              <li key={index}>{dino.name} {dino.size} cm {dino.food}</li>
+              <li key={index}>{dino.name} {dino.size} cm {dino.food} <a href={`http://localhost:3005/app/dino/delete/${dino._id}`}>x</a></li>
             )}
           )}
         </ul>

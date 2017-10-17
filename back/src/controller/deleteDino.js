@@ -10,7 +10,7 @@ const api = express.Router();
 api.get('/delete/:id', (req, res) => {
   Dino.findByIdAndRemove(req.params.id, req.body, err => {
     if (err) return res.send(err);
-    res.json({ message : 'Dino removed !'});
+    res.redirect('http://localhost:3000/')
   });
 });
 

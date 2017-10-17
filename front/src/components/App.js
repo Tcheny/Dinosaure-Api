@@ -28,8 +28,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <List dinosaures={this.state.dinosaures}/>
         <Form />
+        <List dinosaures={this.state.dinosaures}/>
       </div>
     );
   }
