@@ -6,6 +6,7 @@ const api = express.Router();
 
 // POST
 // Ajouter des dinos
+// route /app/dino/add
 // ============================
 api.post('/add', (req,res)=>{
   let NewDino = new Dino (req.body);

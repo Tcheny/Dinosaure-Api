@@ -6,6 +6,7 @@ const api = express.Router();
 
 // DELETE
 // Supprimer des dinos
+// route /app/dino/delete/:id
 // ============================
 api.get('/delete/:id', (req, res) => {
   Dino.findByIdAndRemove(req.params.id, req.body, err => {

@@ -6,6 +6,7 @@ const api = express.Router();
 
 // GET
 // Récupérer un dino par ID
+// route /app/dino/:id
 // ============================
 api.get('/:id', (req, res) => {
   Dino.findById(req.params.id, (err, dino) => {

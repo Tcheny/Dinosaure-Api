@@ -6,6 +6,7 @@ const api = express.Router();
 
 // POST
 // Mise à jour des dinos
+// route /app/dino/:id
 // ============================
 api.post('/:id', (req, res) => {
   Dino.findByIdAndUpdate(req.params.id, req.body, err => {

@@ -6,6 +6,7 @@ const api = express.Router();
 
 // GET
 // Récupérer tous les dinos
+// route /app/dino/
 // ============================
 api.get('/', (req,res) => {
   Dino.find({}, (err, dino)=> {
